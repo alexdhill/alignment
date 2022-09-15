@@ -2,10 +2,12 @@
 title: "CSCI570 Final Project Summary"
 author: "Alexander Duval Hill"
 date: "May 9, 2022"
-output: pdf_document
+output:
+  md_document:
+    variant: markdown_github
 ---
 ```{r, setup, include=F}
-knitr::opts_knit$set(root.dir="~/Desktop/School/S2/CSCI570/Project/datapoints")
+knitr::opts_knit$set(root.dir="~/Documents/usc/S2/CSCI570/Project/datapoints")
 library(knitr)
 library(kableExtra)
 library(ggplot2)
@@ -97,4 +99,4 @@ time
  Unlike the memory complexity, both the basic and efficient solutions run in (quadratic) polynomial time, neither algorithm operates in linear time. The most important note to make is that the growth rate of the basic algorithm is lower than that of the efficient algorithm. At larger problem sizes, the basic algorithm is able to run much faster. Looking at the individual datapoints, we can see that the efficient solution was more than slightly more than 2x slower than the basic solution at large problem sizes. This is very close to what we would expect, and I believe that the reason it appears more than twice as slow is because of the additional time it takes to generate and run through the recursive calls. Had I taken the (lots of) extra time to implement a purely iterative solution for the efficient alignment the growth rate would more closely match 2x than of the basic solution.
 
 # Contributions
-This was an individual project, completed entirely by Alex Hill (Duval Hill on DEN) (USCID#7074816555)
+This was an individual project, completed entirely by Alex Hill (Duval Hill on DEN)
