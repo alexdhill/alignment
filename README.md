@@ -2,6 +2,9 @@
 
 This document compares two sequence alignment implementations. The first, 'basic' alignment, uses the simple dynamic programming solution to creating and optimal alignment. The second, 'efficient' alignment, uses a combination of divide and conquer and dynamic programming to reduce the necessary memory usage from quadratic to linear, while increasing runtime by a factor of two.
 
+![](README_files/figure-markdown_github/basic-alg.png)
+![](README_files/figure-markdown_github/efficient-alg.png)
+
 # Datapoints:
 
 Before addressing the data, it is important to first acknowledge the
